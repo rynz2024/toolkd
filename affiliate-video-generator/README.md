@@ -11,14 +11,29 @@ Semua dependensi (FFmpeg, musik, font) dibundle di dalam installer — pengguna
 
 ## Daftar Isi
 
-- [Untuk Pengguna Akhir](#untuk-pengguna-akhir)
+- [Cara Tercepat Mencoba Aplikasi (Windows)](#cara-tercepat-mencoba-aplikasi-windows)
+- [Untuk Pengguna Akhir (sudah punya installer)](#untuk-pengguna-akhir-sudah-punya-installer)
 - [Untuk Developer](#untuk-developer)
 - [Struktur Proyek](#struktur-proyek)
 - [Detail Teknis Video](#detail-teknis-video)
 - [Troubleshooting](#troubleshooting)
 - [Lisensi Aset](#lisensi-aset)
 
-## Untuk Pengguna Akhir
+## Cara Tercepat Mencoba Aplikasi (Windows)
+
+Setelah clone repo ini dan ada Node.js LTS di komputer Anda:
+
+1. Buka folder `affiliate-video-generator/` di Windows Explorer.
+2. Klik dobel **`Jalankan Aplikasi.bat`** → otomatis install dependency dan
+   buka jendela aplikasi. Pertama kali butuh 2–5 menit untuk download
+   dependency (~250 MB). Selanjutnya tinggal beberapa detik.
+3. Untuk membuat installer `.exe` siap-distribusi, klik dobel
+   **`Build Installer.bat`** → hasil di `dist-electron\`.
+
+Window CMD akan tetap terbuka setelah app tertutup, jadi kalau ada error
+Anda bisa langsung screenshot pesan errornya.
+
+## Untuk Pengguna Akhir (sudah punya installer)
 
 1. Jalankan `AffiliateVideoGenerator-Setup.exe` (installer) atau
    `AffiliateVideoGenerator-Portable.exe` (versi portable, tanpa install).
