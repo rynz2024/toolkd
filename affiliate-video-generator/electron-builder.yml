@@ -1,0 +1,38 @@
+appId: com.toolkd.affiliatevideogenerator
+productName: Affiliate Video Generator
+copyright: Copyright © 2026 toolkd
+directories:
+  buildResources: build
+  output: dist-electron
+files:
+  - src/main/**/*
+  - src/video/**/*
+  - dist/renderer/**/*
+  - package.json
+extraResources:
+  - from: assets/music
+    to: music
+    filter: ["**/*"]
+  - from: assets/fonts
+    to: fonts
+    filter: ["**/*"]
+asar: true
+asarUnpack:
+  - node_modules/ffmpeg-static/**/*
+win:
+  icon: assets/icons/icon.ico
+  target:
+    - target: nsis
+      arch: [x64]
+    - target: portable
+      arch: [x64]
+nsis:
+  oneClick: false
+  perMachine: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  artifactName: AffiliateVideoGenerator-Setup.exe
+  shortcutName: Affiliate Video Generator
+portable:
+  artifactName: AffiliateVideoGenerator-Portable.exe

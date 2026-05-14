@@ -1,0 +1,9 @@
+node_modules/
+dist/
+dist-electron/
+.cache/
+.DS_Store
+*.log
+.env
+.env.local
+out/
